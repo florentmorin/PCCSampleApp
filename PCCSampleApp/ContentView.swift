@@ -169,6 +169,8 @@ struct ContentView: View {
             } else {
                 LanguageModelSession(model: SystemLanguageModel.default)
             }
+            #else
+            LanguageModelSession(model: SystemLanguageModel.default)
             #endif
         }
     }
